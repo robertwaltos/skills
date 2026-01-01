@@ -1,10 +1,21 @@
 ---
 name: pptx
-description: "Presentation creation, editing, and analysis. When Claude needs to work with presentations (.pptx files) for: (1) Creating new presentations, (2) Modifying or editing content, (3) Working with layouts, (4) Adding comments or speaker notes, or any other presentation tasks"
+description: |
+  Comprehensive presentation creation, editing, and analysis with expert-level design guidance, color palettes, typography, and visual storytelling.
+  
+  Use when: Claude needs to create new presentations, modify existing slides, work with layouts, add speaker notes, or apply professional design principles to presentation content.
+  
+  Outputs: PowerPoint presentations (.pptx), designed slides, visual narratives, professional decks.
+  
+  Keywords: pptx, powerpoint, presentation, slides, design, layouts, speaker notes, visual storytelling
 license: Proprietary. LICENSE.txt has complete terms
 ---
 
-# PPTX creation, editing, and analysis
+# PPTX Creation, Editing, and Analysis
+
+> **Expertise Level**: Production • Powers Claude's presentation capabilities
+
+**Related Skills**: [canvas-design](../canvas-design/SKILL.md) • [docx](../docx/SKILL.md) • [brand-guidelines](../brand-guidelines/SKILL.md) • [frontend-design](../frontend-design/SKILL.md)
 
 ## Overview
 

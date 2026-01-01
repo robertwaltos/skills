@@ -1,10 +1,21 @@
 ---
 name: pdf
-description: Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and handling forms. When Claude needs to fill in a PDF form or programmatically process, generate, or analyze PDF documents at scale.
+description: |
+  Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and handling forms.
+  
+  Use when: Claude needs to fill in PDF forms, extract data from PDFs, create new PDF documents, merge/split PDFs, or programmatically process PDF documents at scale.
+  
+  Outputs: PDF files, extracted text/tables, merged documents, form-filled PDFs, converted formats.
+  
+  Keywords: pdf, document, form, extract, merge, split, pypdf, pdfplumber, reportlab
 license: Proprietary. LICENSE.txt has complete terms
 ---
 
 # PDF Processing Guide
+
+> **Expertise Level**: Production • Powers Claude's PDF capabilities
+
+**Related Skills**: [docx](../docx/SKILL.md) • [pptx](../pptx/SKILL.md) • [xlsx](../xlsx/SKILL.md)
 
 ## Overview
 

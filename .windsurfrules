@@ -1,0 +1,31 @@
+You have access to expert-level skills in the skills/ directory. Each skill has a SKILL.md file with professional workflows, best practices, and reference materials.
+
+BEFORE SPECIALIZED TASKS:
+1. Identify relevant skill(s) from the list below
+2. Read the complete SKILL.md file
+3. Follow documented workflows exactly
+4. Use bundled scripts and references when available
+
+SKILL ROUTING:
+- PDF/forms/extraction → skills/pdf/SKILL.md
+- Word documents/tracked changes → skills/docx/SKILL.md
+- Presentations/slides → skills/pptx/SKILL.md
+- Spreadsheets/Excel → skills/xlsx/SKILL.md
+- Visual art/canvas → skills/canvas-design/SKILL.md (see canvas-fonts/FONT-GUIDE.md)
+- Web UI/frontend → skills/frontend-design/SKILL.md
+- Generative art → skills/algorithmic-art/SKILL.md
+- Animated GIFs → skills/slack-gif-creator/SKILL.md
+- Theming/palettes → skills/theme-factory/SKILL.md
+- MCP servers → skills/mcp-builder/SKILL.md
+- Testing/Playwright → skills/webapp-testing/SKILL.md
+- React artifacts → skills/web-artifacts-builder/SKILL.md
+- Creating skills → skills/skill-creator/SKILL.md
+- Brand identity → skills/brand-guidelines/SKILL.md
+- Document collaboration → skills/doc-coauthoring/SKILL.md
+- Internal communications → skills/internal-comms/SKILL.md
+
+SKILL CHAINING (combine for complex tasks):
+- Presentation design: pptx + canvas-design + theme-factory
+- Document workflow: docx + doc-coauthoring
+- Web applications: web-artifacts-builder + frontend-design + webapp-testing
+- Brand materials: brand-guidelines + canvas-design + pptx

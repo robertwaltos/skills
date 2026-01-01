@@ -1,13 +1,23 @@
 ---
 name: theme-factory
-description: Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact that has been creating, or can generate a new theme on-the-fly.
+description: |
+  Professional theming toolkit with curated color palettes, typography pairings, and visual identities for consistent artifact styling across slides, documents, and web pages.
+  
+  Use when: Applying consistent professional styling to presentations, documents, reports, HTML landing pages, or any artifact requiring cohesive visual design.
+  
+  Outputs: Themed artifacts, color palettes, font pairings, consistent visual identities across multiple outputs.
+  
+  Keywords: themes, colors, fonts, styling, palettes, typography, visual identity, branding, consistency
 license: Complete terms in LICENSE.txt
 ---
 
-
 # Theme Factory Skill
 
-This skill provides a curated collection of professional font and color themes themes, each with carefully selected color palettes and font pairings. Once a theme is chosen, it can be applied to any artifact.
+> **Expertise Level**: Advanced • Visual design systems specialist
+
+**Related Skills**: [brand-guidelines](../brand-guidelines/SKILL.md) • [canvas-design](../canvas-design/SKILL.md) • [pptx](../pptx/SKILL.md) • [frontend-design](../frontend-design/SKILL.md)
+
+This skill provides a curated collection of professional font and color themes, each with carefully selected color palettes and font pairings. Once a theme is chosen, it can be applied to any artifact.
 
 ## Purpose
 

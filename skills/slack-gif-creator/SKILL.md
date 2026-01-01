@@ -1,10 +1,21 @@
 ---
 name: slack-gif-creator
-description: Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. Use when users request animated GIFs for Slack like "make me a GIF of X doing Y for Slack."
+description: |
+  Expert toolkit for creating animated GIFs optimized for Slack with professional animation principles, optimization strategies, and visual polish techniques.
+  
+  Use when: Users request animated GIFs for Slack emoji or messages, custom reaction GIFs, team celebration animations, or any animated visual content for Slack.
+  
+  Outputs: Optimized GIF files (128x128 for emoji, 480x480 for messages), smooth animations, file-size optimized graphics.
+  
+  Keywords: gif, animation, slack, emoji, PIL, pillow, frames, optimization, motion graphics
 license: Complete terms in LICENSE.txt
 ---
 
 # Slack GIF Creator
+
+> **Expertise Level**: Advanced • Animation & motion graphics specialist
+
+**Related Skills**: [canvas-design](../canvas-design/SKILL.md) • [algorithmic-art](../algorithmic-art/SKILL.md) • [frontend-design](../frontend-design/SKILL.md)
 
 A toolkit providing utilities and knowledge for creating animated GIFs optimized for Slack.
 

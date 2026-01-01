@@ -1,17 +1,37 @@
 ---
 name: webapp-testing
-description: Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs.
+description: |
+  Comprehensive toolkit for testing and automating local web applications using Playwright. Embodies expertise of a Senior QA Engineer with 8+ years in test automation and web application quality assurance.
+  Use when: user needs to test web applications, verify frontend functionality, debug UI behavior, capture screenshots, automate browser interactions, or view browser logs.
+  Outputs: Test scripts, screenshots, automation code, test reports.
+  Keywords: testing, Playwright, automation, QA, browser testing, screenshots, web app testing, UI testing, end-to-end testing, e2e
 license: Complete terms in LICENSE.txt
 ---
 
-# Web Application Testing
+# Web Application Testing Skill
+
+**Expertise Level**: Senior QA Engineer / Test Automation Architect (8+ years equivalent)
+
+This skill provides comprehensive web application testing capabilities using Playwright, following industry best practices for reliable, maintainable test automation.
+
+---
+
+## Related Skills
+
+- **[mcp-builder](../mcp-builder)**: Test MCP server integrations
+- **[web-artifacts-builder](../web-artifacts-builder)**: Build artifacts that can be tested
+- **[frontend-design](../frontend-design)**: Design interfaces that will be tested
+
+---
+
+## Core Approach
 
 To test local web applications, write native Python Playwright scripts.
 
 **Helper Scripts Available**:
 - `scripts/with_server.py` - Manages server lifecycle (supports multiple servers)
 
-**Always run scripts with `--help` first** to see usage. DO NOT read the source until you try running the script first and find that a customized solution is abslutely necessary. These scripts can be very large and thus pollute your context window. They exist to be called directly as black-box scripts rather than ingested into your context window.
+**Always run scripts with `--help` first** to see usage. DO NOT read the source until you try running the script first and find that a customized solution is absolutely necessary. These scripts can be very large and thus pollute your context window. They exist to be called directly as black-box scripts rather than ingested into your context window.
 
 ## Decision Tree: Choosing Your Approach
 

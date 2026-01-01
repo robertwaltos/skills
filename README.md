@@ -26,6 +26,62 @@ Many skills in this repo are open source (Apache 2.0). We've also included the d
 - [./spec](./spec): The Agent Skills specification
 - [./template](./template): Skill template
 
+---
+
+# 📚 Skills Catalog
+
+## Creative & Design Skills
+
+| Skill | Purpose | Outputs | Expertise Level |
+|-------|---------|---------|-----------------|
+| [`canvas-design`](./skills/canvas-design) | Museum-quality visual art, posters, and design artifacts using design philosophy methodology | `.pdf`, `.png`, `.md` | Art Director / Visual Designer |
+| [`algorithmic-art`](./skills/algorithmic-art) | Generative computational art using p5.js with seeded randomness and interactive exploration | `.html`, `.js`, `.md` | Generative Artist / Creative Technologist |
+| [`frontend-design`](./skills/frontend-design) | Production-grade, distinctive web interfaces that avoid generic AI aesthetics | `.html`, `.jsx`, `.css` | Senior UI/UX Designer |
+| [`theme-factory`](./skills/theme-factory) | Professional font and color themes for styling artifacts (slides, docs, landing pages) | Theme configurations | Brand Designer |
+| [`slack-gif-creator`](./skills/slack-gif-creator) | Animated GIFs optimized for Slack with proper dimensions and file sizes | `.gif` | Motion Graphics Designer |
+
+## Document Skills (Production)
+
+| Skill | Purpose | Outputs | Expertise Level |
+|-------|---------|---------|-----------------|
+| [`pdf`](./skills/pdf) | Comprehensive PDF manipulation: extraction, creation, merging, splitting, forms | `.pdf` | Document Engineer |
+| [`docx`](./skills/docx) | Word document creation and editing with tracked changes, comments, formatting | `.docx` | Technical Writer |
+| [`pptx`](./skills/pptx) | PowerPoint presentation creation and manipulation | `.pptx` | Presentation Designer |
+| [`xlsx`](./skills/xlsx) | Excel spreadsheet creation, formulas, and data manipulation | `.xlsx` | Data Analyst |
+
+## Development & Technical Skills
+
+| Skill | Purpose | Outputs | Expertise Level |
+|-------|---------|---------|-----------------|
+| [`mcp-builder`](./skills/mcp-builder) | High-quality MCP (Model Context Protocol) server development for LLM integrations | MCP servers (TypeScript/Python) | Senior Backend Engineer |
+| [`webapp-testing`](./skills/webapp-testing) | Web application testing using Playwright with server lifecycle management | Test scripts, screenshots | QA Engineer |
+| [`web-artifacts-builder`](./skills/web-artifacts-builder) | Complex multi-component Claude.ai HTML artifacts using React, Tailwind, shadcn/ui | `.html` artifacts | Full-Stack Developer |
+| [`skill-creator`](./skills/skill-creator) | Guide for creating effective skills with proper structure and best practices | Skill packages | Skills Architect |
+
+## Enterprise & Communication Skills
+
+| Skill | Purpose | Outputs | Expertise Level |
+|-------|---------|---------|-----------------|
+| [`doc-coauthoring`](./skills/doc-coauthoring) | Structured workflow for co-authoring documentation, proposals, and specs | Structured documents | Technical Program Manager |
+| [`internal-comms`](./skills/internal-comms) | Internal communications: 3P updates, newsletters, FAQs, status reports | Communication documents | Corporate Communications |
+| [`brand-guidelines`](./skills/brand-guidelines) | Apply Anthropic's official brand colors and typography to artifacts | Branded artifacts | Brand Manager |
+
+---
+
+## Skill Synergies
+
+These skills work well together:
+
+| Primary Skill | Complementary Skill | Use Case |
+|---------------|---------------------|----------|
+| `canvas-design` | `theme-factory` | Apply consistent themes to visual designs |
+| `pptx` | `brand-guidelines` | Create on-brand presentations |
+| `frontend-design` | `web-artifacts-builder` | Scale up complex web interfaces |
+| `doc-coauthoring` | `docx` | Co-author then export to Word format |
+| `mcp-builder` | `webapp-testing` | Build and test MCP server integrations |
+
+---
+
 # Try in Claude Code, Claude.ai, and the API
 
 ## Claude Code

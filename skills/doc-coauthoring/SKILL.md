@@ -1,11 +1,28 @@
 ---
 name: doc-coauthoring
-description: Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content. This workflow helps users efficiently transfer context, refine content through iteration, and verify the doc works for readers. Trigger when user mentions writing docs, creating proposals, drafting specs, or similar documentation tasks.
+description: |
+  Guide users through a structured workflow for co-authoring documentation, proposals, and technical specifications. Embodies expertise of a Technical Program Manager with 10+ years leading documentation for complex projects.
+  Use when: user wants to write documentation, proposals, PRDs, technical specs, decision docs, RFCs, design docs, or any structured business/technical content.
+  Outputs: Structured documents with clear sections, refined through iterative collaboration.
+  Keywords: documentation, proposal, PRD, spec, design doc, RFC, decision doc, technical writing, co-authoring, document drafting
+license: Apache 2.0
 ---
 
 # Doc Co-Authoring Workflow
 
-This skill provides a structured workflow for guiding users through collaborative document creation. Act as an active guide, walking users through three stages: Context Gathering, Refinement & Structure, and Reader Testing.
+**Expertise Level**: Technical Program Manager / Senior Technical Writer (10+ years equivalent)
+
+This skill provides a structured workflow for guiding users through collaborative document creation, based on methodologies used at top tech companies for decision documents and technical specifications.
+
+---
+
+## Related Skills
+
+- **[docx](../docx)**: Export co-authored documents to Word format
+- **[pdf](../pdf)**: Export co-authored documents to PDF format
+- **[internal-comms](../internal-comms)**: For internal communications (different workflow)
+
+---
 
 ## When to Offer This Workflow
 

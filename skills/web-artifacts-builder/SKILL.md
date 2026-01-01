@@ -1,10 +1,21 @@
 ---
 name: web-artifacts-builder
-description: Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components - not for simple single-file HTML/JSX artifacts.
+description: |
+  Professional-grade toolkit for creating elaborate, multi-component claude.ai HTML artifacts using React, TypeScript, Tailwind CSS, and shadcn/ui with bundling to single-file deployables.
+  
+  Use when: Building complex artifacts requiring state management, routing, multiple components, shadcn/ui components, or production-quality React applications bundled for claude.ai.
+  
+  Outputs: Bundled single-file HTML artifacts, React + TypeScript applications, shadcn/ui component implementations.
+  
+  Keywords: react, typescript, tailwind, shadcn, artifacts, bundling, vite, parcel, frontend, spa
 license: Complete terms in LICENSE.txt
 ---
 
 # Web Artifacts Builder
+
+> **Expertise Level**: Advanced • Modern frontend architecture specialist
+
+**Related Skills**: [frontend-design](../frontend-design/SKILL.md) • [webapp-testing](../webapp-testing/SKILL.md) • [canvas-design](../canvas-design/SKILL.md)
 
 To build powerful frontend claude.ai artifacts, follow these steps:
 1. Initialize the frontend repo using `scripts/init-artifact.sh`

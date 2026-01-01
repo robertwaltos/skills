@@ -1,0 +1,119 @@
+name: Release
+
+on:
+  push:
+    paths:
+      - 'VERSION'
+    branches:
+      - main
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Read version
+        id: version
+        run: |
+          VERSION=$(cat VERSION | tr -d '\n')
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "tag=v$VERSION" >> $GITHUB_OUTPUT
+
+      - name: Check if tag exists
+        id: check_tag
+        run: |
+          if git rev-parse "v${{ steps.version.outputs.version }}" >/dev/null 2>&1; then
+            echo "exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "exists=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create release artifacts
+        if: steps.check_tag.outputs.exists == 'false'
+        run: |
+          mkdir -p release
+
+          # ============================================
+          # Artifact 1: loki-mode.zip (for Claude.ai)
+          # SKILL.md at ROOT level for direct upload
+          # ============================================
+          mkdir -p release/skill-root
+          cp SKILL.md release/skill-root/
+          cp -r references release/skill-root/
+
+          cd release/skill-root
+          zip -r ../loki-mode-${{ steps.version.outputs.version }}.zip .
+          cd ../..
+
+          # Also create .skill file (same as zip, different extension)
+          cp release/loki-mode-${{ steps.version.outputs.version }}.zip release/loki-mode-${{ steps.version.outputs.version }}.skill
+
+          # ============================================
+          # Artifact 2: loki-mode-claude-code.zip
+          # For Claude Code: contains loki-mode/ folder
+          # Extract to ~/.claude/skills/
+          # ============================================
+          mkdir -p release/loki-mode
+          cp SKILL.md release/loki-mode/
+          cp README.md release/loki-mode/
+          cp LICENSE release/loki-mode/ 2>/dev/null || true
+          cp VERSION release/loki-mode/
+          cp CHANGELOG.md release/loki-mode/
+          cp -r references release/loki-mode/
+          cp -r examples release/loki-mode/
+          cp -r tests release/loki-mode/
+          cp -r scripts release/loki-mode/
+          cp -r autonomy release/loki-mode/
+
+          cd release
+          zip -r loki-mode-claude-code-${{ steps.version.outputs.version }}.zip loki-mode
+          tar -czvf loki-mode-claude-code-${{ steps.version.outputs.version }}.tar.gz loki-mode
+          cd ..
+
+      - name: Create Git Tag
+        if: steps.check_tag.outputs.exists == 'false'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git tag -a "v${{ steps.version.outputs.version }}" -m "Release v${{ steps.version.outputs.version }}"
+          git push origin "v${{ steps.version.outputs.version }}"
+
+      - name: Extract changelog for this version
+        if: steps.check_tag.outputs.exists == 'false'
+        id: changelog
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+          CHANGELOG=$(awk "/^## \[$VERSION\]/{flag=1; next} /^## \[/{flag=0} flag" CHANGELOG.md)
+          if [ -z "$CHANGELOG" ]; then
+            CHANGELOG="Release v$VERSION"
+          fi
+          echo "$CHANGELOG" > changelog_body.txt
+
+      - name: Create GitHub Release
+        if: steps.check_tag.outputs.exists == 'false'
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: v${{ steps.version.outputs.version }}
+          name: Loki Mode v${{ steps.version.outputs.version }}
+          body_path: changelog_body.txt
+          files: |
+            release/loki-mode-${{ steps.version.outputs.version }}.zip
+            release/loki-mode-${{ steps.version.outputs.version }}.skill
+            release/loki-mode-claude-code-${{ steps.version.outputs.version }}.zip
+            release/loki-mode-claude-code-${{ steps.version.outputs.version }}.tar.gz
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Skip message
+        if: steps.check_tag.outputs.exists == 'true'
+        run: |
+          echo "Tag v${{ steps.version.outputs.version }} already exists. Skipping release."

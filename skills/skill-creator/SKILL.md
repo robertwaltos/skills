@@ -1,12 +1,27 @@
 ---
 name: skill-creator
-description: Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations.
+description: |
+  Comprehensive guide for creating effective, production-quality skills that extend Claude's capabilities. Embodies expertise of a Skills Architect with deep knowledge of prompt engineering, information architecture, and AI system design.
+  Use when: user wants to create a new skill, update an existing skill, design skill architecture, or learn skill development best practices.
+  Outputs: Complete skill packages with SKILL.md, scripts, references, and assets.
+  Keywords: skill creation, skill development, skill design, custom skill, skill architecture, skill builder, extend Claude, skill template
 license: Complete terms in LICENSE.txt
 ---
 
 # Skill Creator
 
-This skill provides guidance for creating effective skills.
+**Expertise Level**: Skills Architect / AI Systems Designer (Deep expertise in prompt engineering and information architecture)
+
+This skill provides comprehensive guidance for creating effective, production-quality skills that transform Claude from a general-purpose agent into a specialized expert.
+
+---
+
+## Related Skills
+
+- **[mcp-builder](../mcp-builder)**: Build MCP servers that skills can leverage
+- **[doc-coauthoring](../doc-coauthoring)**: Co-author skill documentation
+
+---
 
 ## About Skills
 
@@ -17,10 +32,12 @@ equipped with procedural knowledge that no model can fully possess.
 
 ### What Skills Provide
 
-1. Specialized workflows - Multi-step procedures for specific domains
-2. Tool integrations - Instructions for working with specific file formats or APIs
-3. Domain expertise - Company-specific knowledge, schemas, business logic
-4. Bundled resources - Scripts, references, and assets for complex and repetitive tasks
+1. **Specialized workflows** - Multi-step procedures for specific domains
+2. **Tool integrations** - Instructions for working with specific file formats or APIs
+3. **Domain expertise** - Company-specific knowledge, schemas, business logic
+4. **Bundled resources** - Scripts, references, and assets for complex and repetitive tasks
+
+---
 
 ## Core Principles
 
@@ -36,15 +53,27 @@ Prefer concise examples over verbose explanations.
 
 Match the level of specificity to the task's fragility and variability:
 
-**High freedom (text-based instructions)**: Use when multiple approaches are valid, decisions depend on context, or heuristics guide the approach.
-
-**Medium freedom (pseudocode or scripts with parameters)**: Use when a preferred pattern exists, some variation is acceptable, or configuration affects behavior.
-
-**Low freedom (specific scripts, few parameters)**: Use when operations are fragile and error-prone, consistency is critical, or a specific sequence must be followed.
+| Freedom Level | When to Use | Format |
+|---------------|-------------|--------|
+| **High** | Multiple approaches valid, context-dependent | Text instructions, heuristics |
+| **Medium** | Preferred pattern exists, some variation OK | Pseudocode, parameterized scripts |
+| **Low** | Fragile operations, consistency critical | Specific scripts, minimal parameters |
 
 Think of Claude as exploring a path: a narrow bridge with cliffs needs specific guardrails (low freedom), while an open field allows many routes (high freedom).
 
-### Anatomy of a Skill
+### Progressive Disclosure
+
+Skills use a three-level loading system:
+
+| Level | Content | Token Cost | When Loaded |
+|-------|---------|------------|-------------|
+| **1** | Name + Description | ~100 words | Always in context |
+| **2** | SKILL.md body | <5k words | When skill triggers |
+| **3** | Bundled resources | Unlimited | As needed by Claude |
+
+---
+
+## Anatomy of a Skill
 
 Every skill consists of a required SKILL.md file and optional bundled resources:
 

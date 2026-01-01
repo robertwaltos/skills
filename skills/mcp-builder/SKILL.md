@@ -1,10 +1,27 @@
 ---
 name: mcp-builder
-description: Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).
+description: |
+  Create production-grade MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Embodies expertise of a Senior Backend Engineer specializing in API design and LLM integrations.
+  Use when: user requests building MCP servers, LLM tool integrations, API wrappers for AI agents, or Model Context Protocol implementations.
+  Outputs: Complete MCP server projects (TypeScript or Python) with tools, resources, and evaluation tests.
+  Keywords: MCP, Model Context Protocol, LLM tools, API integration, agent tools, FastMCP, MCP SDK, tool server
 license: Complete terms in LICENSE.txt
 ---
 
 # MCP Server Development Guide
+
+**Expertise Level**: Senior Backend Engineer / API Architect (10+ years equivalent)
+
+This skill guides creation of production-grade MCP servers following the methodology of Anthropic's own internal MCP implementations.
+
+---
+
+## Related Skills
+
+- **[webapp-testing](../webapp-testing)**: Test MCP server integrations with web applications
+- **[skill-creator](../skill-creator)**: Create skills that use MCP servers
+
+---
 
 ## Overview
 

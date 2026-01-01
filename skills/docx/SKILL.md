@@ -1,10 +1,21 @@
 ---
 name: docx
-description: "Comprehensive document creation, editing, and analysis with support for tracked changes, comments, formatting preservation, and text extraction. When Claude needs to work with professional documents (.docx files) for: (1) Creating new documents, (2) Modifying or editing content, (3) Working with tracked changes, (4) Adding comments, or any other document tasks"
+description: |
+  Comprehensive Word document creation, editing, and analysis with support for tracked changes, comments, formatting preservation, and text extraction.
+  
+  Use when: Claude needs to create new Word documents, modify existing content with tracked changes, add comments, work with professional documents, or perform document analysis.
+  
+  Outputs: Word documents (.docx), tracked changes, comments, formatted text, markdown conversions.
+  
+  Keywords: docx, word, document, tracked changes, comments, ooxml, professional documents
 license: Proprietary. LICENSE.txt has complete terms
 ---
 
-# DOCX creation, editing, and analysis
+# DOCX Creation, Editing, and Analysis
+
+> **Expertise Level**: Production • Powers Claude's document capabilities
+
+**Related Skills**: [pdf](../pdf/SKILL.md) • [pptx](../pptx/SKILL.md) • [xlsx](../xlsx/SKILL.md) • [doc-coauthoring](../doc-coauthoring/SKILL.md)
 
 ## Overview
 

@@ -1,10 +1,32 @@
 ---
 name: canvas-design
-description: Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs, never copying existing artists' work to avoid copyright violations.
+description: |
+  Create museum-quality visual art, posters, and design artifacts using structured design philosophy methodology. Embodies expertise of an Art Director with 15+ years in editorial design, branding, and visual communication.
+  Use when: user requests posters, visual art, design pieces, branded visuals, magazine layouts, book covers, album art, infographics, or any static visual composition.
+  Outputs: .pdf, .png files (visual artifacts) and .md files (design philosophy documentation).
+  Keywords: poster, art, design, visual, graphic design, layout, composition, branding, print design, editorial design
 license: Complete terms in LICENSE.txt
 ---
 
-These are instructions for creating design philosophies - aesthetic movements that are then EXPRESSED VISUALLY. Output only .md files, .pdf files, and .png files.
+# Canvas Design Skill
+
+**Expertise Level**: Art Director / Senior Visual Designer (15+ years equivalent)
+
+This skill embodies the methodology of world-class design studios—from Pentagram to Experimental Jetset—distilled into a repeatable process that produces museum or magazine-quality visual work.
+
+---
+
+## Related Skills
+
+- **[theme-factory](../theme-factory)**: Apply consistent color/font themes after creating canvas designs
+- **[brand-guidelines](../brand-guidelines)**: Apply Anthropic brand styling to canvas outputs
+- **[frontend-design](../frontend-design)**: When the design needs to be interactive/web-based instead of static
+
+---
+
+## Core Process
+
+Output only `.md` files, `.pdf` files, and `.png` files.
 
 Complete this in two steps:
 1. Design Philosophy Creation (.md file)
@@ -105,7 +127,7 @@ With both the philosophy and the conceptual framework established, express it on
 
 To create museum or magazine quality work, use the design philosophy as the foundation. Create one single page, highly visual, design-forward PDF or PNG output (unless asked for more pages). Generally use repeating patterns and perfect shapes. Treat the abstract philosophical design as if it were a scientific bible, borrowing the visual language of systematic observation—dense accumulation of marks, repeated elements, or layered patterns that build meaning through patient repetition and reward sustained viewing. Add sparse, clinical typography and systematic reference markers that suggest this could be a diagram from an imaginary discipline, treating the invisible subject with the same reverence typically reserved for documenting observable phenomena. Anchor the piece with simple phrase(s) or details positioned subtly, using a limited color palette that feels intentional and cohesive. Embrace the paradox of using analytical visual language to express ideas about human experience: the result should feel like an artifact that proves something ephemeral can be studied, mapped, and understood through careful attention. This is true art. 
 
-**Text as a contextual element**: Text is always minimal and visual-first, but let context guide whether that means whisper-quiet labels or bold typographic gestures. A punk venue poster might have larger, more aggressive type than a minimalist ceramics studio identity. Most of the time, font should be thin. All use of fonts must be design-forward and prioritize visual communication. Regardless of text scale, nothing falls off the page and nothing overlaps. Every element must be contained within the canvas boundaries with proper margins. Check carefully that all text, graphics, and visual elements have breathing room and clear separation. This is non-negotiable for professional execution. **IMPORTANT: Use different fonts if writing text. Search the `./canvas-fonts` directory. Regardless of approach, sophistication is non-negotiable.**
+**Text as a contextual element**: Text is always minimal and visual-first, but let context guide whether that means whisper-quiet labels or bold typographic gestures. A punk venue poster might have larger, more aggressive type than a minimalist ceramics studio identity. Most of the time, font should be thin. All use of fonts must be design-forward and prioritize visual communication. Regardless of text scale, nothing falls off the page and nothing overlaps. Every element must be contained within the canvas boundaries with proper margins. Check carefully that all text, graphics, and visual elements have breathing room and clear separation. This is non-negotiable for professional execution. **IMPORTANT: Use different fonts if writing text. Consult the `./canvas-fonts/FONT-GUIDE.md` for detailed font recommendations, pairings, and use cases. Search the `./canvas-fonts` directory for available fonts. Regardless of approach, sophistication is non-negotiable.**
 
 Download and use whatever fonts are needed to make this a reality. Get creative by making the typography actually part of the art itself -- if the art is abstract, bring the font onto the canvas, not typeset digitally.
 
@@ -128,3 +150,95 @@ Take a second pass. Go back to the code and refine/polish further to make this a
 ## MULTI-PAGE OPTION
 
 To create additional pages when requested, create more creative pages along the same lines as the design philosophy but distinctly different as well. Bundle those pages in the same .pdf or many .pngs. Treat the first page as just a single page in a whole coffee table book waiting to be filled. Make the next pages unique twists and memories of the original. Have them almost tell a story in a very tasteful way. Exercise full creative freedom.
+
+---
+
+## Expert Design Theory
+
+### The Gestalt Principles in Practice
+
+Master designers leverage these perceptual principles instinctively:
+
+| Principle | Application |
+|-----------|-------------|
+| **Proximity** | Group related elements physically; white space separates concepts |
+| **Similarity** | Repeat visual attributes (color, shape, size) to create unity |
+| **Continuity** | Lead the eye along implied lines and curves |
+| **Closure** | Let viewers complete incomplete shapes mentally |
+| **Figure/Ground** | Create clear hierarchy between subject and background |
+| **Common Fate** | Elements moving in same direction are perceived as grouped |
+
+### Color Theory for Visual Impact
+
+**Color relationships that work:**
+- **Complementary** (opposite on wheel): Maximum contrast, use sparingly
+- **Analogous** (adjacent on wheel): Harmonious, sophisticated
+- **Triadic** (equidistant): Vibrant but balanced
+- **Split-complementary**: Contrast with less tension
+
+**The 60-30-10 Rule**: 60% dominant color, 30% secondary, 10% accent
+
+**Emotional associations:**
+- Warm colors (red, orange, yellow): Energy, urgency, warmth
+- Cool colors (blue, green, purple): Calm, trust, sophistication
+- Neutrals: Elegance, timelessness, foundation
+
+### Composition Frameworks
+
+**The Golden Ratio (1:1.618)**: Nature's proportion, inherently pleasing
+**Rule of Thirds**: Place key elements at intersection points
+**Golden Spiral**: Guide the eye in a natural flow pattern
+**Diagonal Dominance**: Dynamic tension through angled elements
+**Symmetrical Balance**: Formal, stable, authoritative
+**Asymmetrical Balance**: Dynamic, modern, engaging
+
+### Typography as Visual Communication
+
+**Typographic hierarchy creates information architecture:**
+1. **Primary**: The single most important element (largest, boldest)
+2. **Secondary**: Supporting information (smaller but distinct)
+3. **Tertiary**: Details and fine print (smallest, lightest)
+
+**Spacing principles:**
+- **Tracking** (letter-spacing): Increase for headlines, decrease for body
+- **Leading** (line-height): 120-145% of font size for readability
+- **Kerning**: Adjust specific letter pairs for optical balance
+
+### Visual Weight Distribution
+
+Elements have visual weight based on:
+- **Size**: Larger = heavier
+- **Color**: Saturated/dark = heavier
+- **Complexity**: Detailed = heavier
+- **Position**: Lower/right = heavier (culturally conditioned)
+- **Isolation**: Alone in space = heavier
+
+Balance weights across the composition for stability, or deliberately unbalance for tension.
+
+---
+
+## Quality Checklist
+
+Before finalizing any canvas design:
+
+- [ ] **Hierarchy is clear**: Eye knows where to go first, second, third
+- [ ] **Nothing overlaps unintentionally**: All overlaps are deliberate design choices
+- [ ] **Margins respected**: Safe zone on all edges
+- [ ] **Color palette cohesive**: Maximum 3-5 colors with clear purpose
+- [ ] **Typography limited**: Maximum 2-3 fonts
+- [ ] **White space intentional**: Breathing room enhances, not fills
+- [ ] **Alignment consistent**: Elements snap to invisible grid
+- [ ] **Scale creates interest**: Variety in element sizes
+- [ ] **Contrast sufficient**: Text readable, elements distinct
+- [ ] **Craftsmanship evident**: Appears hand-labored, not generated
+
+---
+
+## Reference Materials
+
+- **Font Guide**: See `./canvas-fonts/FONT-GUIDE.md` for detailed typography recommendations
+- **Available Fonts**: 27 curated open-source fonts in `./canvas-fonts/`
+
+---
+
+*This skill embodies 15+ years of art direction and visual design expertise. Every output should appear as if created by a master designer who labored over each detail with painstaking precision.*

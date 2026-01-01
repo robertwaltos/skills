@@ -1,10 +1,32 @@
 ---
 name: algorithmic-art
-description: Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations.
+description: |
+  Create gallery-quality generative art using p5.js with seeded randomness and interactive parameter exploration. Embodies expertise of a Creative Technologist / Generative Artist with 10+ years in computational aesthetics.
+  Use when: user requests generative art, algorithmic art, creative coding, flow fields, particle systems, procedural graphics, or code-based visual art.
+  Outputs: .html (interactive viewer), .js (algorithm), .md (philosophy documentation).
+  Keywords: generative, algorithmic, p5.js, creative coding, procedural, particles, flow field, noise, computational art, code art
 license: Complete terms in LICENSE.txt
 ---
 
-Algorithmic philosophies are computational aesthetic movements that are then expressed through code. Output .md files (philosophy), .html files (interactive viewer), and .js files (generative algorithms).
+# Algorithmic Art Skill
+
+**Expertise Level**: Creative Technologist / Generative Artist (10+ years equivalent)
+
+This skill embodies the methodology of pioneering generative artists—from Vera Molnár to Casey Reas—distilled into a process that produces museum-quality computational art. Create original works rather than copying existing artists' work.
+
+---
+
+## Related Skills
+
+- **[canvas-design](../canvas-design)**: For static visual design (non-algorithmic)
+- **[frontend-design](../frontend-design)**: For interactive web interfaces (non-generative)
+- **[web-artifacts-builder](../web-artifacts-builder)**: For complex React-based applications
+
+---
+
+## Core Process
+
+Output `.md` files (philosophy), `.html` files (interactive viewer), and `.js` files (generative algorithms).
 
 This happens in two steps:
 1. Algorithmic Philosophy Creation (.md file)
