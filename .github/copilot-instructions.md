@@ -1,6 +1,6 @@
 # Copilot Custom Instructions
 
-This repository contains expert-level skills for AI agent capabilities. When working in this codebase or referencing these skills:
+This repository contains 27 expert-level skills for AI agent capabilities. When working in this codebase or referencing these skills:
 
 ## Skill Discovery
 - Skills are located in `skills/` directory, each with a `SKILL.md` file
@@ -14,6 +14,7 @@ This repository contains expert-level skills for AI agent capabilities. When wor
 - **docx** - Word documents with tracked changes
 - **pptx** - Presentations with design guidance
 - **xlsx** - Spreadsheets with financial modeling standards
+- **documentation** - Technical docs, API docs, runbooks, ADRs
 
 ### Creative & Design
 - **canvas-design** - Museum-quality visual art (see `canvas-fonts/FONT-GUIDE.md`)
@@ -27,9 +28,22 @@ This repository contains expert-level skills for AI agent capabilities. When wor
 - **webapp-testing** - Playwright-based testing
 - **web-artifacts-builder** - React/TypeScript artifacts
 - **skill-creator** - Creating new skills
+- **api-design** - REST, GraphQL, gRPC API design patterns
+- **database-design** - Schema design, query optimization, data architecture
+- **mobile-development** - iOS, Android, cross-platform development
+- **code-review** - Expert code review patterns and feedback
+- **performance-optimization** - Full-stack performance analysis
+
+### Infrastructure & Operations
+- **devops-automation** - CI/CD, IaC, Kubernetes, cloud architecture
+- **security-audit** - Vulnerability assessment, security controls
+- **data-pipeline** - ETL, streaming, analytics workloads
 
 ### Strategic (Load for ALL tasks)
 - **autonomous-research** - Research, automation discovery, continuous improvement
+
+### Research & Analysis
+- **user-research** - UX research methodologies, user interviews
 
 ### Enterprise
 - **brand-guidelines** - Anthropic brand identity
